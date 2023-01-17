@@ -90,6 +90,7 @@ header {
 	height: 122px;
 	display: flex;
 	width: 100%;
+	box-shadow: 3px 4px 6px #151515;
 }
 
 .header_logo {

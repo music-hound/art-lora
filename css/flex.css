@@ -287,7 +287,7 @@
 	.banner_girl {
 		height: 350px;
 		position: absolute;
-		opacity: 0.7;
+		opacity: 0.5;
 	}
 	.banner {
 		height: 350px;
@@ -319,9 +319,8 @@
 		padding-top: 15px;
 	}
 	.row_1200 {
-		/* width: 450px; */
 		width: 100%;
-		max-width: 450px;
+		max-width: 600px;
 	}
 	.service_block {
 		margin-top: 0;
@@ -341,11 +340,58 @@
         z-index: 30;
         transform: translateY(-120%);
         height: 100%;
-        background: rgba(256,256,256, 0.95);
+        background: rgba(40,41,46, 0.95);
         transition: 0.5s;
         display: flex;
     }
     .menu-mobile_visible {
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .footer_contact {
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-5%);
+    }
+    .footer_logo {
+		width: 70px;
+	}
+    .service_item1,
+	.service_item2,
+	.service_item3,
+	.service_item4 {
+		margin-top: 15px;
+		background-size: 230px 116px;
+		width: 230px;
+		height: 116px;
+	}
+    .service_title {
+        margin-top: 14px;
+        font-size: 17px;
+        line-height: 25px;
+    }
+    .row_1200 {
+		width: 100%;
+		max-width: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .row_1200 {
+		width: 100%;
+		max-width: 400px;
+    }
+    
+}
+@media (max-width: 400px) {
+    .row_1200 {
+		width: 100%;
+		max-width: 300px;
+    }
+    .quote {
+        line-height: 25px;
+        font-size: 18px;
     }
 }
