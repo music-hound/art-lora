@@ -84,13 +84,14 @@ body {
 }
 
 header {
-	position: relative;
+	position: fixed;
+	top: 0;
 	z-index: 35;
 	background: #28292e;
 	height: 122px;
 	display: flex;
 	width: 100%;
-	box-shadow: 3px 4px 6px #151515;
+	box-shadow: 0px 0px 4px rgb(0 0 0 / 50%);
 }
 
 .header_logo {
@@ -121,7 +122,7 @@ header {
 	content: '';
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: -50px;
+	bottom: -41px;
 	width: 0;
 	height: 2px;
 	background: #facd88;
@@ -185,6 +186,10 @@ header {
 .burger img{
 	width: 40px;
 	height: 40px;
+}
+
+main {
+	margin-top: 100px;
 }
 
 .banner {
@@ -402,5 +407,89 @@ footer {
 	transition: 0.3s;
 }
 .footer_policy a:hover {
+	color: #facd88;
+}
+
+.conf-policy {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1100;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background: rgb(0 0 0 / 70%);
+
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+}
+
+.conf-policy-visible {
+	display: flex;
+}
+
+.conf-main {
+	background: #fff;
+	width: 80%;
+	height: 80%;
+	position: relative;
+	padding-bottom: 30px;
+	border-radius: 5px;
+}
+
+.conf-close {
+	z-index: 1200;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.conf-close path {
+	fill: #ba8d55;
+	transition: 0.3s;
+}
+
+.conf-close:hover,
+.conf-close:hover path {
+	fill: #facd88;
+}
+
+.conf-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	overflow-y: auto;
+	height: 94%;
+	padding:30px 45px 0 30px;
+	margin-top: 12px;
+}
+
+.conf-block-h2 {
+	font-size: 26px;
+	font-weight: 600;
+	color: #28292e;
+}
+
+.conf-block p {
+	font-size: 16px;
+	color: #28292e;
+}
+
+.conf-block a {
+	color: #28292e;
+	transition: 0.3s;
+}
+
+.conf-block a:hover {
 	color: #facd88;
 }

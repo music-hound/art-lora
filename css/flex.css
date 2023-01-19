@@ -212,6 +212,12 @@
 	.row_1600 {
 		max-width: 855px;
 	}
+    .nav_item::before {
+        bottom: -32px;
+    }
+    main {
+        margin-top: 80px;
+    }
 	.quote {
 		line-height: 30px;
 		font-size: 22px;
@@ -239,6 +245,12 @@
 	.footer_logo img {
 		width: 80px;
 	}
+    .conf-block p {
+        font-size: 14px;
+    }
+    .conf-block ul {
+        font-size: 14px;
+    }
 }
 @media (max-width: 900px) {
 	.row_1200 {
@@ -382,6 +394,9 @@
     .row_1200 {
 		width: 100%;
 		max-width: 400px;
+    }
+    .conf-block-h2 {
+        font-size: 16px;
     }
     
 }

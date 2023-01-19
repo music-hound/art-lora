@@ -5,3 +5,11 @@ $('.burger').on('click', function(){
             $('.menu-mobile').addClass('menu-mobile_visible');
     }
 });
+
+$('.policy_ref').on('click', function(){
+        $('.conf-policy').addClass('conf-policy-visible');
+});
+
+$('.conf-close').on('click', function(){
+    $('.conf-policy').removeClass('conf-policy-visible');
+});
