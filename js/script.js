@@ -13,3 +13,8 @@ $('.policy_ref').on('click', function(){
 $('.conf-close').on('click', function(){
     $('.conf-policy').removeClass('conf-policy-visible');
 });
+
+$(document).click(function(e){
+    if ($(e.target).is('.conf-policy'))
+    $('.conf-policy').removeClass('conf-policy-visible')
+})
